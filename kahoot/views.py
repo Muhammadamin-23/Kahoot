@@ -94,3 +94,11 @@ def game_pin(request):
         'random_number': str(random_number)[:3] + " " + str(random_number)[3:]
     }
     return render(request, 'kahoot/game_pin.html', context)
+
+
+def quizs(request):
+    return render(request, 'kahoot/quizs.html')
+
+
+def join_game(request):
+    return render(request, 'kahoot/join_game.html')
